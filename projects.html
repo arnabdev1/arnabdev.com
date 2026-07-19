@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects &mdash; Arnab Dev</title>
+  <meta name="description" content="Hackathon and extracurricular projects by Arnab Dev." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="inner">
+      <a class="site-title" href="index.html">Arnab Dev</a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="cv.pdf" target="_blank" rel="noopener">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <h1>Projects</h1>
+
+    <p>Relevant projects projects, newest first.</p>
+
+    <!-- ============================================================
+         TO ADD A NEW PROJECT: copy the card below and paste it
+         directly under this comment (newest first). Drop the image
+         into assets/. If there is no image, delete the <img> line —
+         the card works fine without it.
+
+         <div class="project-card">
+           <img class="thumb" src="assets/IMAGE.png" alt="NAME logo" onerror="this.style.display='none'" />
+           <div class="body">
+             <div class="head">
+               <h3>NAME</h3>
+               <a class="view-link" href="LINK" target="_blank" rel="noopener">View Project &#8599;</a>
+             </div>
+             <p>Description.</p>
+             <p class="tech">&lt;&gt; Tech, Stack, Here</p>
+           </div>
+         </div>
+         ============================================================ -->
+
+    <div class="project-card">
+      <img class="thumb" src="assets/neurosync-logo.png" alt="NeuroSync logo" onerror="this.style.display='none'" />
+      <div class="body">
+        <div class="head">
+          <h3>NeuroSync</h3>
+          <a class="view-link" href="https://devpost.com/software/undecided-iwednr" target="_blank" rel="noopener">View Project &#8599;</a>
+        </div>
+        <p>
+          Engineered a closed-loop Brain-Computer Interface (BCI) using a Muse 2 gateway to
+          stream real-time EEG/PPG data, training a 1D-CNN and LSTM pipeline to predict
+          cognitive fatigue with a 30-minute forecasting window. Architected a
+          Mixture-of-Agents (MoA) intervention system in Node.js and LangGraph via the
+          Featherless.ai API, dynamically routing between 3 LLMs (DeepSeek, Qwen, KimiK2)
+          to autonomously block distracting applications.
+        </p>
+        <p class="tech">&lt;&gt; Next.js, Node.js, React, Flask, PyTorch, LangChain, LangGraph, Featherless.ai</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img class="thumb" src="assets/sprinklify.png" alt="Sprinklify logo" onerror="this.style.display='none'" />
+      <div class="body">
+        <div class="head">
+          <h3>Sprinklify</h3>
+          <a class="view-link" href="https://devpost.com/software/undecided-svb23a" target="_blank" rel="noopener">View Project &#8599;</a>
+        </div>
+        <p>
+          Sprinklify is an intelligent irrigation assistant that integrates NLP, computer
+          vision, optimization, ML, and IoT into one seamless platform. Users can simply
+          describe their lawn (&ldquo;7m by 5m lawn with rounded edges&hellip;&rdquo;) and
+          Gemini parses the text into structured GeoJSON, validated by spaCy + regex. Or
+          they can upload a photo or drone video, and our Flask CV pipeline (OpenCV +
+          Shapely) segments lawn areas and sprinkler points to auto-generate GeoJSON. Once
+          a lawn is defined, our solver + reinforcement learning agent generates
+          per-sprinkler rotation and flow schedules that minimize overspray and water use
+          while maximizing coverage. Gemini also powers three LLM &ldquo;agents&rdquo; for
+          users. We also had real hardware simulation with Arduino-based IoT sprinklers in
+          a physical testbed!
+        </p>
+        <p class="tech">&lt;&gt; React, Tailwind CSS, Spring Boot (LLM/NLP/Auth0), Flask (CV/ML/Optimizer), Gemini API, spaCy, regex, PPO RL, OR-Tools, MATLAB, OpenCV, Shapely, MongoDB</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <!-- <img class="thumb" src="assets/vafuzz.png" alt="Variability Aware Fuzzer" onerror="this.style.display='none'" /> -->
+      <div class="body">
+        <div class="head">
+          <h3>Variability Aware Fuzzer</h3>
+          <a class="view-link" href="https://arnabdev.netlify.app/vafuzz.pdf" target="_blank" rel="noopener">View Project &#8599;</a>
+        </div>
+        <p>
+          Research: A novel variability-aware fuzzer that integrates principled dynamic
+          variability-aware analysis within the fuzzing process to enhance configuration
+          space exploration using new variability-aware seed selection and mutations to
+          drive the fuzzing process.
+        </p>
+        <p class="tech">&lt;&gt; Docker, C, C++, Python</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img class="thumb" src="assets/utd.png" alt="FuzzbenchPlusPlus" onerror="this.style.display='none'" />
+      <div class="body">
+        <div class="head">
+          <h3>FuzzbenchPlusPlus</h3>
+          <a class="view-link" href="https://arnabdev.netlify.app/spur.pdf" target="_blank" rel="noopener">View Project &#8599;</a>
+        </div>
+        <p>
+          Research: In this work, we identify critical gaps in current benchmarking
+          infrastructure that prevent fair and systematic comparison of such fuzzers. We
+          extend FuzzBench to support configuration-aware fuzzing.
+        </p>
+        <p class="tech">&lt;&gt; Docker, C, C++, Python</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img class="thumb" src="assets/hydra.png" alt="HydraWatch" onerror="this.style.display='none'" />
+      <div class="body">
+        <div class="head">
+          <h3>HydraWatch</h3>
+          <a class="view-link" href="https://devpost.com/software/lorem-ipsum-zxuv8p" target="_blank" rel="noopener">View Project &#8599;</a>
+        </div>
+        <p>
+          An app to visualize gas pipeline data through an interactive dashboard for
+          detection and prediction of hydrate formation using current gas injection
+          metrics with a 95% accurate regression model for real-time predictions.
+        </p>
+        <p class="tech">&lt;&gt; Flask, Next.js, ML</p>
+      </div>
+    </div>
+
+    <!-- <div class="project-card">
+      <img class="thumb" src="assets/legal.png" alt="LegalAI" onerror="this.style.display='none'" />
+      <div class="body">
+        <div class="head">
+          <h3>LegalAI</h3>
+          <a class="view-link" href="https://legalai-test.netlify.app/" target="_blank" rel="noopener">View Project &#8599;</a>
+        </div>
+        <p>
+          The chatbot is designed to handle legal inquiries. Allows users to upload legal
+          documents and receive detailed insights and guidance through the AI-powered
+          analysis provided by LegalAI.
+        </p>
+        <p class="tech">&lt;&gt; React, Amazon Q, SageMaker, and Bedrock</p>
+      </div>
+    </div> -->
+
+    <!-- <div class="project-card">
+      <img class="thumb" src="assets/ide.png" alt="Code Editor/IDE" onerror="this.style.display='none'" />
+      <div class="body">
+        <div class="head">
+          <h3>Code Editor/IDE</h3>
+          <a class="view-link" href="https://arnab-ide.netlify.app/" target="_blank" rel="noopener">View Project &#8599;</a>
+        </div>
+        <p>
+          In-browser code editor that supports multiple languages! Used the Monaco react
+          library for the code editor, Chakra UI to style the app, and the Piston API to
+          execute the code.
+        </p>
+        <p class="tech">&lt;&gt; React</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img class="thumb" src="assets/simplecalc.png" alt="Simple Calculator" onerror="this.style.display='none'" />
+      <div class="body">
+        <div class="head">
+          <h3>Simple Calculator</h3>
+          <a class="view-link" href="https://arnab-calc.netlify.app/" target="_blank" rel="noopener">View Project &#8599;</a>
+        </div>
+        <p>In-browser calculator using React, CSS, and Framer Motion.</p>
+        <p class="tech">&lt;&gt; React</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img class="thumb" src="assets/nifportfolio.png" alt="Next Initiative Foundation Portfolio" onerror="this.style.display='none'" />
+      <div class="body">
+        <div class="head">
+          <h3>Next Initiative Foundation Portfolio</h3>
+          <a class="view-link" href="https://nextinitiative.netlify.app/" target="_blank" rel="noopener">View Project &#8599;</a>
+        </div>
+        <p>
+          Portfolio website for fundraising purposes built for a non-profit organization
+          in 2020.
+        </p>
+        <p class="tech">&lt;&gt; React</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img class="thumb" src="assets/personalportfolio.png" alt="Personal Portfolio" onerror="this.style.display='none'" />
+      <div class="body">
+        <div class="head">
+          <h3>Personal Portfolio</h3>
+          <a class="view-link" href="https://arnabdev.netlify.app/" target="_blank" rel="noopener">View Project &#8599;</a>
+        </div>
+        <p>You are looking at it!</p>
+        <p class="tech">&lt;&gt; HTML, CSS</p>
+      </div>
+    </div> -->
+
+    <p>Return to <a href="index.html">Home</a> or go to <a href="research.html">Research</a>.</p>
+
+  </main>
+
+  <footer class="site-footer">
+    &copy; 2026 <strong>Arnab Dev</strong>
+  </footer>
+
+</body>
+</html>
