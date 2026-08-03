@@ -209,6 +209,15 @@ li {
 
 .entry {
   margin: 1.8rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.entry-text {
+  flex: 1 1 320px;
+  min-width: 0;
 }
 
 .entry-meta {
@@ -232,7 +241,9 @@ li {
   align-items: flex-start;
   justify-content: center;
   gap: 12px;
-  margin: 0.6rem 0 1rem;
+  flex: 0 1 auto;
+  order: 2;
+  margin: 0;
 }
 
 .entry h3 a {
@@ -348,6 +359,15 @@ li {
 
   .project-card {
     flex-direction: column;
+  }
+
+  .entry {
+    flex-direction: column;
+  }
+
+  .entry-images {
+    order: 0;
+    width: 100%;
   }
 
   .hero h1 {
