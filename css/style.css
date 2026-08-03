@@ -186,6 +186,10 @@ li {
   filter: brightness(1.1);
 }
 
+.btn-scholar {
+  background: #4285f4;
+}
+
 .btn-linkedin {
   background: #1c78c0;
 }
