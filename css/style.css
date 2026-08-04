@@ -110,6 +110,11 @@ main {
   padding: 2rem 20px 3rem;
 }
 
+body.home main {
+  max-width: 960px;
+  padding-top: 1rem;
+}
+
 h1 {
   font-size: 2rem;
   font-weight: 800;
@@ -146,7 +151,7 @@ li {
 
 .hero {
   text-align: center;
-  padding-top: 1.5rem;
+  padding-top: 0.25rem;
 }
 
 .hero img.headshot {
@@ -159,7 +164,7 @@ li {
 .hero h1 {
   font-size: 2.5rem;
   font-weight: 800;
-  margin: 1.5rem 0 0.5rem;
+  margin: 0.75rem 0 0.5rem;
 }
 
 .hero .subtitle {
@@ -217,6 +222,31 @@ li {
 .hero .email {
   color: #6a737d;
   font-size: 1.05rem;
+}
+
+/* ---------- Home / intro grid (Welcome + Explore) ---------- */
+
+.intro-grid {
+  display: flex;
+  gap: 48px;
+  margin-top: 1.4rem;
+}
+
+.intro-col {
+  flex: 1;
+  min-width: 0;
+}
+
+.intro-col h2 {
+  margin-top: 0;
+}
+
+.intro-col p {
+  margin: 0;
+}
+
+.intro-col ul {
+  margin: 0;
 }
 
 /* ---------- Entries (Experience & Research) ---------- */
@@ -399,6 +429,11 @@ li {
   .entry-images {
     order: 0;
     width: 100%;
+  }
+
+  .intro-grid {
+    flex-direction: column;
+    gap: 1.6rem;
   }
 
   .hero h1 {
