@@ -49,14 +49,13 @@ hr {
 /* ---------- Navbar ---------- */
 
 .site-header {
-  border-bottom: 1px solid #e1e4e8;
   background: #ffffff;
 }
 
 .site-header .inner {
   max-width: 1080px;
   margin: 0 auto;
-  padding: 14px 24px;
+  padding: 8px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -111,8 +110,17 @@ main {
 }
 
 body.home main {
-  max-width: 960px;
+  max-width: 1100px;
   padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+body.home hr {
+  margin: 1rem 0;
+}
+
+body.home .site-footer {
+  margin-top: 0.5rem;
 }
 
 h1 {
@@ -222,6 +230,7 @@ li {
 .hero .email {
   color: #6a737d;
   font-size: 1.05rem;
+  margin: 0;
 }
 
 /* ---------- Home / intro grid (Welcome + Explore) ---------- */
@@ -229,7 +238,8 @@ li {
 .intro-grid {
   display: flex;
   gap: 48px;
-  margin-top: 1.4rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
 .intro-col {
